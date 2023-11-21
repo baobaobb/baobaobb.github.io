@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <title>Hugo is for lovers</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <meta name="author" content="StaticMania">
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- Bootstrap -->
+  
+  <link rel="stylesheet" href="http://127.0.0.1:1313/css/bootstrap.min.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="http://127.0.0.1:1313/font-awesome/css/font-awesome.min.css" />
+  <!-- Main Stylesheets -->
+  
+  <link href="http://127.0.0.1:1313/scss/style.min.css" rel="stylesheet" />
+
+  
+
+  
+  <link rel="shortcut icon" href="http://127.0.0.1:1313/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="http://127.0.0.1:1313/images/favicon.ico" type="image/x-icon" />
+</head>
+<body><nav class="navbar navbar-expand-lg site-navigation">
+  <div class="container">
+    <a class="navbar-brand" href="http://127.0.0.1:1313/">
+      <img src="http://127.0.0.1:1313/images/logo.png" alt="logo" />
+    </a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#sitenavbar"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sitenavbar">
+      <ul class="navbar-nav ml-auto main-nav">
+         
+         
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:1313/"
+              >Home</a
+            >
+          </li>
+           
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:1313/about"
+              >About</a
+            >
+          </li>
+           
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:1313/portfolio"
+              >Portfolio</a
+            >
+          </li>
+           
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:1313/blog"
+              >Blog</a
+            >
+          </li>
+           
+         
+          
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-sm btn-primary btn-sm-rounded"
+              href="http://127.0.0.1:1313/contact"
+            >
+              <span class="btn-area">
+                <span data-text="Get in touch">
+                  Get in touch
+                </span>
+              </span>
+            </a>
+          </li>
+           
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+
+<section class="site-blog details">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article class="site-blog-details">
+          <p><span>August 3, 2015</span> by <span></span></p>
+          <h2 class="blog-title">Hugo is for lovers</h2>
+          <img class="feature-image" src="http://127.0.0.1:1313/" alt="blog-feature-image">
+          <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
+appropriate version for your os and architecture.</p>
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
+<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+<p>Follow the following steps:</p>
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to http://localhost:1313</li>
+</ol>
+<p>Corresponding pseudo commands:</p>
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+<p>Stop the Hugo process by hitting ctrl+c.</p>
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+<p>The best way to learn something is to play with it.</p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="site-cta" style='background-image: url("http://127.0.0.1:1313/images/backgrounds/cta-background.jpg");'>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="site-cta-title">LET’S WORK TOGETHER</h1>
+          <ul class="site-cta-buttons">
+            <li>
+              <a href="http://127.0.0.1:1313/contact" class="btn btn-secondary">
+                <span class="btn-area">
+                  <span data-text="Submit Query">
+                    Submit Query
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:1313/portfolio" class="btn btn-primary">
+                <span class="btn-area">
+                  <span data-text="Not Convinced">
+                    Not Convinced
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+        </main><footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="site-footer-logo"><a href="http://127.0.0.1:1313/"><img src="http://127.0.0.1:1313/images/logo-footer.png" alt="logo-footer"></a></div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="site-footer-widget">
+          <h5 class="site-footer-widget-title">Contact Info</h5>
+          <p class="site-footer-widget-description">
+	    
+              713 Elmwood St.<br>Prior Lake, MN 55372
+	      <br>
+	    
+	    
+              <a href="tel:409-896-1444">409-896-1444</a>
+              <br>
+	    
+	    
+              <a href="mailto:info@roxo.co">info@roxo.co</a>
+	    
+          </p>
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-2 col-md-6">
+        <div class="site-footer-widget">
+          <h5 class="site-footer-widget-title">Sitemap</h5>
+          <ul class="site-footer-widget-links">
+            
+            <li><a href="http://127.0.0.1:1313/about">About Company</a></li>
+            
+            <li><a href="http://127.0.0.1:1313/portfolio">Projects</a></li>
+            
+            <li><a href="http://127.0.0.1:1313/blog">Blog</a></li>
+            
+            <li><a href="http://127.0.0.1:1313/contact">Contact</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-2 col-md-6">
+        <div class="site-footer-widget">
+          <h5 class="site-footer-widget-title">Social Media</h5>
+          <ul class="site-footer-widget-links">
+            
+              <li><a href="#">Medium</a></li>
+            
+              <li><a href="#">Behance</a></li>
+            
+              <li><a href="#">Dribbble</a></li>
+            
+              <li><a href="#">Instagram</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="site-footer-widget">
+          <h5 class="site-footer-widget-title">We help brands:</h5>
+          <p class="site-footer-widget-description">
+            develop design solutions<br>produce valuable cultural content<br>create fresh brand experience
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-12">
+        <a href="#top" class="site-footer-widget-top">
+          <img src="http://127.0.0.1:1313/images/to-top.svg" alt="back-to-top">
+          <p>
+	    I want to <br> visit again
+          </p>
+        </a>
+      </div>
+      <div class="col-12">
+        <div class="site-footer-copyright">
+          <p>© Copyright 2023 - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+
+
+
+<script src="http://127.0.0.1:1313/js/vendor.min.js"></script>
+
+<script src="http://127.0.0.1:1313/js/script.min.js"></script>
+</body>
+</html>
